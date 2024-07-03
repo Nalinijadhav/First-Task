@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card Details Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="intro-section">
+            <div class="left-align">
+                <img src="assets/bg-main-desktop.png">
+                <div class="cards">
+                    <div class="card front-card">
+                        <span class="card-number">9591 6489 6389 1010</span>
+                        <span class="card-name">FELICIA  LEIRE </span>
+                        <span class="card-exp">09/00</span>
+                    <img src="assets/bg-card-front.png" >
+                    
+                    </div>
+                    <div class="card back-card">
+                        <span class="back-cardnum">000</span>
+                    <img src="assets/bg-card-back.png" >
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <form>
+                    <div class="form-group">
+                        <div>
+                            
+                        </div>
+                        <div>
+                            <label for="card-holder">Card Holder</label>
+                            <input type="text" id="card-holder" placeholder="Felicia Leire">
+                            <span class="error-message" id="card-holder-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <label for="card-number">Card Number</label>
+                        </div>
+                        <div>
+                            <input type="text" id="card-number" placeholder="9591 6489 6389 1010" maxlength="19">
+                            <span class="error-message" id="card-number-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <label for="card-expiry">Expiry Date</label>
+                        </div>
+                        <div>
+                            <input type="text" id="card-expiry" placeholder="MM/YY" maxlength="5">
+                            <span class="error-message" id="card-expiry-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <label for="card-cvc">CVC</label>
+                        </div>
+                        <div>
+                            <input type="text" id="card-cvc" placeholder="CVC" maxlength="3">
+                            <span class="error-message" id="card-cvc-error"></span>
+                        </div>
+                    </div>
+                    <button type="submit">Confirm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
